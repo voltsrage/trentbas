@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.css">
+	<link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+	<link type="text/css" rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+
+</head>
+  
+<body>
+
+	 <div id="container">
+ 
+              <div class="header">
+     
+              </div>
+           
+   
+              <div id="nav">
+       
+           
+              </div>          
+       
+ 
+              
+              <div class="sidebar">
+			   <form id="test">
+
+                <select id="files">
+             
+			    <optgroup label="States">
+				  <option value="Michigan">Michigan</option>
+                  <option value="Alabama">Alabama</option>
+			      <option value="Ohio">Ohio</option>
+				</optgroup>
+				
+				<optgroup label="Countries">
+				  <option value="United States">United States</option>
+                  <option value="India">India</option>
+			      <option value="France">France</option>
+				</optgroup>
+
+                </select>
+
+              </form>
+             <!--
+              <ul id="verticalMenu">
+                <li><a href="">Rome</a>
+                  <ul>
+                    <li><a href="">Early</a></li>
+                    <li><a href="">Middle</a></li>
+                    <li><a href="">Late</a></li>
+                  </ul>
+                 </li>
+                 <li>-</li>
+                 <li><a href="">Egypt</a>
+                  <ul>
+                    <li><a href="">Early</a></li>
+                    <li><a href="">Middle</a></li>
+                    <li><a href="">Late</a></li>
+                  </ul>
+                 </li>
+                 <li><a href="">Greece</a>
+                  <ul>
+                    <li><a href="">Early</a></li>
+                    <li><a href="">Middle</a></li>
+                    <li><a href="">Late</a></li>
+                  </ul>
+                 </li>
+                  </ul>-->
+              </div>
+ 
+ 
+              <div class="main"> 
+				 <div id = "maincontainer">
+         <ul>
+            <li><a href = "#greece">Ancient Greece</a></li>
+            <li><a href = "#rome">Ancient Rome</a></li>
+            <li><a href = "#egypt">Ancient Egypt</a></li>
+            <li><a href = "#egypt2">Ancient Egypt 2</a></li>
+         </ul>
+           
+         <div id = "greece">
+            <p>The early part Ancient Greece was dominated by
+            Sparta and Athens. </p>
+         </div>
+           
+         <div id = "rome">
+            <p>Julius Caesar was one of Rome's greatest
+            generals. </p>
+         </div>
+           
+         <div id = "egypt">
+            <p> The ancient Egyptians built many
+            fabulous buildings including the pyramids. </p>
+         </div>
+         
+          <div id = "egypt2">
+            <p> The ancient Egyptians built many
+            fabulous buildings including the pyramids. </p>
+			<img id="resize" src="lenin.jpg">
+         </div>
+              </div>
+       
+			
+          </div>
+	
+		
+
+ <script src="jquery-3.4.1.js"></script>
+ <script src="jquery-ui/jquery-ui.js"></script>
+ <script>
+          $(document).ready(function() {
+			//use submenu to change list icon
+		  $("#verticalMenu").menu();
+		  //use show: time and hide: time to fade in an out dialog box
+		  //effects bounce/explode
+		  //CloseOnEscape to block someone from closing using ESC
+		  //modal locks the website until dialog box is dealt with
+		  //$("#box").dialog({title:"Talk to Lenin",modal: true});
+		  // to disable use disable:[n1,n2]
+		  
+		  
+		  //use draggable, to be able to drag things around
+		  // use draggable({grid:[height,width]}) to drag around in a grid format
+		  //use draggable({containment:"parent"}) to stop from dragging outside parent
+		  
+		  
+		  //use .sortable to move inline objects around
+		  
+		  //use .resizable to change the size of item
+		 // $("#maincontainer").tabs({heightStyle:"fill"});
+		 
+		 //$("#id/class").autocomplete({source:["","",""]}) use minLength to determine how many characters to enter before suggestion
+			$("#resize").resizable({ghost:true});
+			$("#files").selectmenu({width:175});
+		  });
+		  
+		  
+ 
+ </script> 
+</body>
+</html>
